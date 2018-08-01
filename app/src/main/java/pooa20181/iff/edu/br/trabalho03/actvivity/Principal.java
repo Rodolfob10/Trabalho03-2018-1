@@ -1,7 +1,9 @@
-package pooa20181.iff.edu.br.trabalho03;
+package pooa20181.iff.edu.br.trabalho03.actvivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import pooa20181.iff.edu.br.trabalho03.R;
 
 public class Principal extends AppCompatActivity {
 
