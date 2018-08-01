@@ -71,8 +71,8 @@ public class OficinaAdapter extends RecyclerView.Adapter{
             ruaOficina = (TextView) itemView.findViewById(R.id.tvruaOficina);
 
 
-            txtNomeOficina = (TextView) itemView.findViewById(R.id.textNomeEleitor);
-            txtruaOficina = (TextView) itemView.findViewById(R.id.textNumeroTitulo);
+            txtNomeOficina = (TextView) itemView.findViewById(R.id.textNomeOficina);
+            txtruaOficina = (TextView) itemView.findViewById(R.id.textruaOficina);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
