@@ -47,12 +47,7 @@ public class ListaOficina extends AppCompatActivity implements ClickRecyclerView
         recyclerView.setAdapter(new OficinaAdapter(getOficinas(), this, this));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-
-    public List<Oficina> getCandidatos()
-    {
-        return (List) realm.where(Oficina.class).findAll();
-    }
-
+    
     public void onClick(Object object) {
         Oficina oficina = (Oficina) object;
         Intent intent = new Intent( ListaOficina.this, OficinaDetalhe.class);
@@ -65,4 +60,7 @@ public class ListaOficina extends AppCompatActivity implements ClickRecyclerView
         realm.close();
     }
 
+    public List<Oficina> getOficinas() {
+        return (List) realm.where(Oficina.class).findAll();
+    }
 }

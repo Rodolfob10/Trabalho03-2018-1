@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actvity.Principal">
+        <activity android:name=".actvity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +21,10 @@
         <activity
             android:name=".actvity.ListaOficina"
             android:label="ListaOficina"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+             />
 
 
 

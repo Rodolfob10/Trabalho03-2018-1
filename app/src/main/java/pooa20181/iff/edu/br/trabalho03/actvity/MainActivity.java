@@ -4,6 +4,7 @@ package pooa20181.iff.edu.br.trabalho03.actvity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -25,7 +26,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
         Intent intent = null;
         try {
+            Log.i("error", "abc" + activities[position]);
             Class obj = Class.forName("pooa20181.iff.edu.br.trabalho03.actvity." + activities[position]);
+            Log.i("error", "nome do objeto" + obj);
+
+            intent = new Intent(this, obj);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
