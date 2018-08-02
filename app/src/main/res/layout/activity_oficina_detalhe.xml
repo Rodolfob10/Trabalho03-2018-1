@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".actvity.OficinaDetalhe">
 
+
     <android.support.v7.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="357dp"
-        android:layout_height="307dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="368dp"
+        android:layout_height="323dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="3dp">
 
         <TextView
             android:id="@+id/etNome"
-            android:layout_width="81dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tnome" />
+            android:text="Nome:" />
 
         <EditText
             android:id="@+id/edtNome"
-            android:layout_width="270dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
@@ -33,13 +33,13 @@
             android:id="@+id/tRua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/trua"
+            android:text="Rua:"
             app:layout_column="0"
             app:layout_row="1" />
 
         <EditText
             android:id="@+id/edtRua"
-            android:layout_width="273dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
@@ -48,76 +48,74 @@
 
         <Button
             android:id="@+id/btnBuscar"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:text="@string/buttonbuscar"
-            app:layout_column="0"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            app:layout_column="1"
             app:layout_row="2" />
 
         <TextView
             android:id="@+id/tMunicipio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tmunicipio"
+            android:text="Municipio:"
             app:layout_column="0"
-            app:layout_row="4" />
+            app:layout_row="3" />
 
         <EditText
             android:id="@+id/edtMunicipio"
-            android:layout_width="272dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_column="1"
-            app:layout_row="4" />
-
-        <TextView
-            android:id="@+id/tlatitude"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tlatitude"
-            android:inputType="textPersonName"
-            app:layout_column="0"
-            app:layout_row="5" />
-
-        <TextView
-            android:id="@+id/tlongitude"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tlongitude"
-            android:inputType="textPersonName"
-            app:layout_column="0"
-            app:layout_row="6" />
+            app:layout_row="3" />
 
         <TextView
             android:id="@+id/tBairro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tbairro"
+            android:text="Bairro:"
             app:layout_column="0"
-            app:layout_row="3" />
+            app:layout_row="4" />
 
         <EditText
             android:id="@+id/edtBairro"
-            android:layout_width="270dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_column="1"
-            app:layout_row="3" />
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/tLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"
+            app:layout_column="0"
+            app:layout_row="5" />
 
         <EditText
             android:id="@+id/edtLatitude"
-            android:layout_width="267dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_column="1"
             app:layout_row="5" />
 
+        <TextView
+            android:id="@+id/tLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            app:layout_column="0"
+            app:layout_row="6" />
+
         <EditText
             android:id="@+id/edtLongitude"
-            android:layout_width="268dp"
+            android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
@@ -127,40 +125,29 @@
     </android.support.v7.widget.GridLayout>
 
     <Button
-        android:id="@+id/bexcluir"
-        android:layout_width="100dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balterar"
-        app:layout_constraintVertical_bias="1.0" />
+        android:id="@+id/badicionar"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Adicionar"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
-        android:id="@+id/badicionar"
-        android:layout_width="100dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        android:id="@+id/bexcluir"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Excluir"
+        app:layout_constraintTop_toBottomOf="@+id/badicionar"
+        tools:layout_editor_absoluteX="13dp" />
 
     <Button
         android:id="@+id/balterar"
-        android:layout_width="99dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/badicionar" />
-
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Alterar"
+        app:layout_constraintTop_toBottomOf="@+id/bexcluir"
+        tools:layout_editor_absoluteX="13dp" />
 </android.support.constraint.ConstraintLayout>
