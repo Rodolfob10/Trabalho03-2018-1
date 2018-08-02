@@ -17,8 +17,8 @@ public class Oficina extends RealmObject implements Serializable {
     private String rua;
     private String bairro;
     private String municipio;
-    private Double latitude;
-    private Double longitude;
+    private String latitude;
+    private String longitude;
 
 
 
@@ -34,7 +34,7 @@ public class Oficina extends RealmObject implements Serializable {
     }
 
     public Oficina(int id, String nome, String rua, String bairro,
-                     String municipio, Double latitude, Double longitude)
+                     String municipio, String latitude, String longitude)
     {
         this.id = id;
         this.nome = nome;
@@ -78,22 +78,21 @@ public class Oficina extends RealmObject implements Serializable {
         this.nome = nome;
     }
 
-    public Double getLatitude() {
+    public String getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Double latitude) {
+    public void setLatitude(String latitude) {
         this.latitude = latitude;
     }
 
-    public Double getLongitude() {
+    public String getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(Double longitude) {
+    public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
-
 
     public String getMunicipio() {
         return municipio;

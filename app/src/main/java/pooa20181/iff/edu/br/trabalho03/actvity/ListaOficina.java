@@ -47,7 +47,7 @@ public class ListaOficina extends AppCompatActivity implements ClickRecyclerView
         recyclerView.setAdapter(new OficinaAdapter(getOficinas(), this, this));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
-    
+
     public void onClick(Object object) {
         Oficina oficina = (Oficina) object;
         Intent intent = new Intent( ListaOficina.this, OficinaDetalhe.class);
