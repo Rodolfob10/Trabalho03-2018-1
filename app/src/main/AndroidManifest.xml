@@ -20,12 +20,18 @@
 
         <activity
             android:name=".actvity.ListaOficina"
-            android:label="ListaOficina"/>
+            android:label="Lista Oficina"/>
+
+        <activity
+            android:name=".actvity.OficinaDetalhe"
+            android:label="Oficina Detalhe"/>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"
             />
+
 
 
 
