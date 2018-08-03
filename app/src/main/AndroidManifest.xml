@@ -23,9 +23,16 @@
             android:label="Lista Oficina"/>
 
         <activity
+            android:name=".actvity.ListaMecanico"
+            android:label="Lista Mecanico"/>
+
+        <activity
             android:name=".actvity.OficinaDetalhe"
             android:label="Oficina Detalhe"/>
 
+        <activity
+            android:name=".actvity.MecanicoDetalhe"
+            android:label="Mecanico Detalhe"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

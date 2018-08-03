@@ -12,7 +12,7 @@ import android.widget.ListView;
 import  pooa20181.iff.edu.br.trabalho03.R;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    private String[] activities = {"ListaOficina"};
+    private String[] activities = {"ListaOficina","ListaMecanico"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

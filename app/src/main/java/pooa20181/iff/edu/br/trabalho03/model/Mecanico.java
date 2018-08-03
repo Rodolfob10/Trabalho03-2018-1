@@ -34,12 +34,13 @@ public class Mecanico extends RealmObject implements Serializable {
         this.funcao = funcao;
     }
 
-    public Mecanico(int id, String nome,String funcao, String rua, String bairro,
+    public Mecanico(int id, String nome,String funcao,Date dataNascimento, String rua, String bairro,
                    String municipio, String latitude, String longitude)
     {
         this.id = id;
         this.nome = nome;
         this.funcao = funcao;
+        this.dataNascimento = dataNascimento;
         this.rua = rua;
         this.bairro = bairro;
         this.municipio = municipio;
