@@ -63,7 +63,7 @@ public class OficinaDetalhe extends AppCompatActivity implements GoogleApiClient
         btnBuscar = findViewById(R.id.btnBuscar);
         btnAdicionar = findViewById(R.id.badicionar);
         btnAlterar = findViewById(R.id.balterar);
-        btnExcluir = findViewById(R.id.badicionar);
+        btnExcluir = findViewById(R.id.bexcluir);
 
         Intent intent = getIntent();
         id = (int) intent.getSerializableExtra("id");

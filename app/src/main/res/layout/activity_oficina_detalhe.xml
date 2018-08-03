@@ -12,7 +12,8 @@
         android:layout_width="368dp"
         android:layout_height="323dp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="3dp">
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/etNome"
@@ -131,7 +132,8 @@
         android:layout_marginTop="8dp"
         android:text="Adicionar"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bexcluir"
@@ -140,7 +142,8 @@
         android:layout_marginTop="12dp"
         android:text="Excluir"
         app:layout_constraintTop_toBottomOf="@+id/badicionar"
-        tools:layout_editor_absoluteX="13dp" />
+        tools:layout_editor_absoluteX="13dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/balterar"
@@ -149,5 +152,6 @@
         android:layout_marginTop="12dp"
         android:text="Alterar"
         app:layout_constraintTop_toBottomOf="@+id/bexcluir"
-        tools:layout_editor_absoluteX="13dp" />
+        tools:layout_editor_absoluteX="13dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
