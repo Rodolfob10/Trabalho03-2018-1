@@ -67,12 +67,12 @@ public class OficinaAdapter extends RecyclerView.Adapter{
         public OficinaViewHolder(View itemView){
             super(itemView);
 
-            nomeOficina = (TextView) itemView.findViewById(R.id.tvNomeMecanico);
+            nomeOficina = (TextView) itemView.findViewById(R.id.tvNomeOficina);
             ruaOficina = (TextView) itemView.findViewById(R.id.tvruaOficina);
 
 
-            txtNomeOficina = (TextView) itemView.findViewById(R.id.textNomeMecanico);
-            txtruaOficina = (TextView) itemView.findViewById(R.id.textfuncaoMecanico);
+            txtNomeOficina = (TextView) itemView.findViewById(R.id.textNomeOficina);
+            txtruaOficina = (TextView) itemView.findViewById(R.id.textruaOficina);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
